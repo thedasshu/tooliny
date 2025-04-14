@@ -1,7 +1,7 @@
 
-# tool-installer - Package Installer Tool
+# Tooliny - Package Installer Tool
 
-A colorful, hacker-style package installer for **Kali Linux**, **Parrot OS**, and **Termux**.  
+A necessary Packages installer for **Kali Linux**, **Parrot OS**, and **Termux**.  
 Quickly install the most important, necessary, or full sets of tools with just one script!
 
 ---
@@ -38,8 +38,8 @@ apt install git -y
 
 ### 2. Clone the Repo:
 ```bash
-git clone https://github.com/thedasshu/tool-installer
-cd tool-installer
+git clone https://github.com/thedasshu/tooliny
+cd tooliny
 ```
 ### 3. Check for perfect format to avoid errors
 ```bash
