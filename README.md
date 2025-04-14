@@ -1,9 +1,19 @@
+
 # tool-installer - Package Installer Tool
 
 A colorful, hacker-style package installer for **Kali Linux**, **Parrot OS**, and **Termux**.  
 Quickly install the most important, necessary, or full sets of tools with just one script!
 
 ---
+```
+████████╗ ██████╗  ██████╗ ██╗     ██╗███╗   ██╗███████╗██╗   ██╗
+╚══██╔══╝██╔═══██╗██╔═══██╗██║     ██║████╗  ██║██╔════╝╚██╗ ██╔╝
+   ██║   ██║   ██║██║   ██║██║     ██║██╔██╗ ██║█████╗   ╚████╔╝ 
+   ██║   ██║   ██║██║   ██║██║     ██║██║╚██╗██║██╔══╝    ╚██╔╝  
+   ██║   ╚██████╔╝╚██████╔╝███████╗██║██║ ╚████║███████╗   ██║   
+   ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   
+        Tool Installer by Dasshu as D-Script!| Kali Linux | Termux | Parrot OS
+```
 
 ## Features:
 - [1] **Most Important** packages (top 14)
