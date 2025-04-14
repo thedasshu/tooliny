@@ -5,15 +5,6 @@ A colorful, hacker-style package installer for **Kali Linux**, **Parrot OS**, an
 Quickly install the most important, necessary, or full sets of tools with just one script!
 
 ---
-```
-████████╗ ██████╗  ██████╗ ██╗     ██╗███╗   ██╗███████╗██╗   ██╗
-╚══██╔══╝██╔═══██╗██╔═══██╗██║     ██║████╗  ██║██╔════╝╚██╗ ██╔╝
-   ██║   ██║   ██║██║   ██║██║     ██║██╔██╗ ██║█████╗   ╚████╔╝ 
-   ██║   ██║   ██║██║   ██║██║     ██║██║╚██╗██║██╔══╝    ╚██╔╝  
-   ██║   ╚██████╔╝╚██████╔╝███████╗██║██║ ╚████║███████╗   ██║   
-   ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   
-        Tool Installer by Dasshu as D-Script!| Kali Linux | Termux | Parrot OS
-```
 
 ![Tool-D Screenshot](screenshot.png)
 
