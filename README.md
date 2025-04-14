@@ -52,13 +52,18 @@ dos2unix install.sh
 chmod +x install.sh
 bash install.sh
 ```
-##Join us
-Telegram group chat : https://t.me/hackerschatbox
-WhatsApp group chat : https://chat.whatsapp.com/GAVQ00SRxfvGXwHmew4TkU
+## Join Us
 
-##Thanks to support us
-If any issue persist, contact me on instagram, or our groups. 
+**Telegram Group Chat**: [https://t.me/hackerschatbox](https://t.me/hackerschatbox)  
+**WhatsApp Group Chat**: [https://chat.whatsapp.com/GAVQ00SRxfvGXwHmew4TkU](https://chat.whatsapp.com/GAVQ00SRxfvGXwHmew4TkU)
 
-###Contact us
-Instagram : https://instagram.com/thedasshu
-Telegram  : https://t.me/thedasshu
+---
+
+## Thanks for Supporting Us!
+
+If any issue persists, feel free to contact me via Instagram or join our support groups.
+
+### Contact Us
+
+**Instagram**: [@thedasshu](https://instagram.com/thedasshu)  
+**Telegram**: [https://t.me/thedasshu](https://t.me/thedasshu)
