@@ -10,7 +10,6 @@ green='\033[1;32m'
 blue='\033[1;34m'
 yellow='\033[1;33m'
 white='\033[1;37m'
-reset='\033[0m'
 
 # Detect Package Manager
 if command -v apt >/dev/null; then
@@ -48,16 +47,12 @@ update_system() {
 install_packages() {
     for pkg in "$@"; do
         echo -e "${yellow}[+] Installing ${pkg}...${reset}"
-        
-        # animated progress bar
         bar=""
         for i in {1..20}; do
             bar="${bar}#"
             printf "\r${blue}[%-20s] %d%%${reset}" "$bar" "$((i * 5))"
             sleep 0.05
         done
-
-        # Install package silently
         if $PKG install -y "$pkg" >/dev/null 2>&1; then
             echo -e "\r${green}[✓] ${pkg} installed successfully!${reset}                        "
         else
@@ -97,39 +92,40 @@ contact_info() {
     esac
 }
 
-# Main Menu
+# Start Loop
+while true; do
+    clear
+    echo -e "${blue}┌────────────────────────────────────────┐"
+    echo -e "│           ${white}TOOLINY INSTALLER${blue}             │"
+    echo -e "│      Created by ${green}Dasshu${blue} for Hackers      │"
+    echo -e "└────────────────────────────────────────┘${reset}\n"
+    echo -e "${green}Ubuntu | Kali | Termux | Parrot OS${reset}"
+    echo -e "${yellow}Select Installation Mode:${reset}"
+    echo -e "${green}[1]--> Minimal Essentials Pkg   (Core Tools - 30%)"
+    echo -e "[2]--> Necessary Environment (Most Required - 70%)"
+    echo -e "[3]--> Full Setup & Networking (Required tools - 100%)"
+    echo -e "[4]--> Check & Repair Package System (Fix Errors)"
+    echo -e "[5]--> Contact Us (Join our groups)"
+    echo -e "[0]--> Exit Installer${reset}"
+    read -p $'\nEnter your choice [0-5]: ' choice
 
-clear
-echo -e "${blue}┌────────────────────────────────────────┐"
-echo -e "│           ${white}TOOLINY INSTALLER${blue}             │"
-echo -e "│      Created by ${green}Dasshu${blue} for Hackers       │"
-echo -e "└────────────────────────────────────────┘${reset}\n"
-echo -e "${green}Ubuntu | Kali | Termux | Parrot OS${reset}"
-echo -e "${yellow}Select Installation Mode:${reset}"
-echo -e "${green}[1]--> Minimal Essentials Pkg   (Core Tools - 30%)"
-echo -e "[2]--> Necessary Environment (Most Required - 70%)"
-echo -e "[3]--> Full Setup & Networking (Required tools-100%)"
-echo -e "[4]--> Check & Repair Package System (Fix Errors)"
-echo -e "[5]--> Contact Us(Join our groups) ${reset}"
-read -p $'\nEnter your choice [1-5]: ' choice
+    update_system
 
-update_system
-
-case $choice in
-    1)
-        install_packages python curl openssh git wget nano bash tar zip unzip python-pip clang proot termux-api
-        ;;
-    2)
-        install_packages python curl openssh git wget nano bash tar zip unzip pip clang proot termux-api \
-        ruby perl dnsutils php nmap net-tools nodejs coreutils util-linux binutils figlet man
-        ;;
-    3)
-        install_packages python curl openssh git wget nano bash tar zip unzip pip clang proot termux-api \
-        ruby perl dnsutils php nmap net-tools nodejs coreutils util-linux binutils figlet \
-        htop man neofetch iproute2 iputils-ping netcat ifconfig traceroute whois tcpdump aircrack-ng
-        ;;
-    4)
-        repair_system() {
+    case $choice in
+        1)
+            install_packages python curl openssh git wget nano bash tar zip unzip python-pip clang proot termux-api
+            ;;
+        2)
+            install_packages python curl openssh git wget nano bash tar zip unzip pip clang proot termux-api \
+            ruby perl dnsutils php nmap net-tools nodejs coreutils util-linux binutils figlet man
+            ;;
+        3)
+            install_packages python curl openssh git wget nano bash tar zip unzip pip clang proot termux-api \
+            ruby perl dnsutils php nmap net-tools nodejs coreutils util-linux binutils figlet \
+            htop man neofetch iproute2 iputils-ping netcat ifconfig traceroute whois tcpdump aircrack-ng
+            ;;
+        4)
+            repair_system() {
     echo -e "${yellow}[+] Checking and repairing package system...${reset}"
 
     echo -e "${blue}[*] Cleaning up...${reset}"
@@ -149,14 +145,18 @@ case $choice in
 
     echo -e "${green}[✓] Package system repaired successfully!${reset}"
 }
-        ;;
-    5)
-        contact_info
-        ;;
-    *)
-        echo -e "${red}[!] Invalid option. Exiting.${reset}"
-        exit 1
-        ;;
-esac
+            ;;
+        5)
+            contact_info
+            ;;
+        0)
+            echo -e "${green}[✓] Exiting D-Script. Goodbye!${reset}"
+            break
+            ;;
+        *)
+            echo -e "${red}[!] Invalid option. Try again.${reset}"
+            ;;
+    esac
 
-echo -e "\n${green}[✓] Task Completed Successfully. Enjoy D-Script!${reset}"
+    read -p $'\nPress Enter to return to the main menu...'
+done
