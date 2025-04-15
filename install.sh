@@ -47,12 +47,17 @@ update_system() {
 install_packages() {
     for pkg in "$@"; do
         echo -e "${yellow}[+] Installing ${pkg}...${reset}"
-        bar=""
-        for i in {1..20}; do
-            bar="${bar}#"
-            printf "\r${blue}[%-20s] %d%%${reset}" "$bar" "$((i * 5))"
-            sleep 0.05
-        done
+
+progress=0
+{
+    $PKG install -y "$pkg" 2>/dev/null
+} | while IFS= read -r line; do
+    progress=$((progress + 1))
+    percent=$(( (progress * 5) % 101 ))
+    bar=$(printf "%0.s#" $(seq 1 $((percent / 5))))
+    printf "\r${blue}[%-20s] %3d%%${reset}" "$bar" "$percent"
+    sleep 0.05
+done
         if $PKG install -y "$pkg" >/dev/null 2>&1; then
             echo -e "\r${green}[✓] ${pkg} installed successfully!${reset}                        "
         else
