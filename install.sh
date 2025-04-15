@@ -104,7 +104,8 @@ while true; do
     echo -e "│           ${white}TOOLINY INSTALLER${blue}             │"
     echo -e "│      Created by ${green}Dasshu${blue} for Hackers      │"
     echo -e "└────────────────────────────────────────┘${reset}\n"
-    echo -e "${green}Ubuntu | Kali | Termux | Parrot OS${reset}"
+    echo -e "         --=> ${violet}Ubuntu | Kali | Termux | Parrot OS${reset}" <=--
+    echo -e " \n"
     echo -e "${yellow}Select Installation Mode:${reset}"
     echo -e "${green}[1]--> Minimal Essentials Pkg   (Core Tools - 30%)"
     echo -e "[2]--> Necessary Environment (Most Required - 70%)"
