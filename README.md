@@ -6,13 +6,14 @@ Quickly install the most important, necessary, or full sets of tools with just o
 
 ---
 
-![Tool-D Screenshot](screenshot.png)
+![Tool-D Screenshot](screenshot2.png)
 
 
 ## Features:
 - [1] **Most Important** packages (top 14)
 - [2] **Necessary Tools** for other scripts (20+ essential)
 - [3] **Full Setup** with network analyzers and info tools
+- [4] **Package Repair** by checking all packages and finding error and fix it. 
 
 Color-coded and styled for terminal enthusiasts! by Dasshu
 
