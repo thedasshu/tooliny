@@ -3,6 +3,8 @@
 
 A necessary Packages installer for **Kali Linux**, **Parrot OS**, and **Termux**.  
 Quickly install the most important, necessary, or full sets of tools with just one script!
+###Used for:###
+Installing most important and necessary packages and tools mainly used for networking. And finds the missing packages and errors to fix it. 
 
 ---
 
