@@ -1,33 +1,23 @@
 
 # Tooliny - Package Installer Tool
 
-A necessary Packages installer for **Kali Linux**, **Parrot OS**, and **Termux**.  
+A necessary Packages installer for **Kali Linux**, **Parrot OS**, **Arch Linux**, **Google Shell Terminal**, and **Termux**.  
 Quickly install the most important, necessary, or full sets of tools with just one script!
 ### Used for:
 Installing all essential packages and networking tools, checking for missing dependencies, and auto-fixing any detected errors. 
 
 ---
 
-![Tool-D Screenshot](screenshot2.png)
+![Tooliny Screenshot](screenshot.png)
 
 
 ## Features:
-- [1] **Most Important** packages (top 14)
-- [2] **Necessary Tools** for other scripts (20+ essential)
-- [3] **Full Setup** with network analyzers and info tools
-- [4] **Package Repair** by checking all packages and finding error and fix it. 
+- [1] **Most Important** packages (30%)
+- [2] **Necessary Tools** for other scripts (60%)
+- [3] **Full Setup** with network analyzers and info tools (100%) 
+- [4] **Package Repair** by checking all packages and finding error and fix it.
 
 Color-coded and styled for terminal enthusiasts! by Dasshu
-
----
-
-## Color Preview:
-
-- **Red** = Alerts & Errors  
-- **Green** = Success  
-- **Blue** = Progress Info  
-- **Yellow** = Installer Actions  
-- **White** = Clean Text
 
 ---
 
